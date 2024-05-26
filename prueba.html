@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sistema Web de Asesoramiento Psicológico</title>
     <style>
         body {
             background: linear-gradient(to right, #346f9e, #4286f47b);
-            margin: 82px 100px;
-            
+            margin: 20px; /* Reducido el margen para dispositivos móviles */
         }
         strong{
             font-size: 20px;
@@ -19,23 +18,22 @@
             border: 2px solid #e92020;
             padding: 35px;
             margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.564);
+            border-radius: 40px;
+            box-shadow: 15px 15px 18px rgb(59, 110, 177);
         } 
-        .pollo {
-            height: 325px;
-            position: relative;
-            
-            border: 2px solid #1aca37;
-            padding: 30px;
-            margin-bottom: 40px;
+    
+        .box2:hover {
+            background-color: #304b76;
         }
-        
         .desc {
-            font-family: Arial, sans-serif;
             position: absolute;
             top: 35px;
             left: 660px;
             font-size: 26px;
             padding: 45px;
+            color: #000000; 
+            font-family: Arial, Helvetica, sans-serif;
         }
         .desc2 {
             font-family: Arial, sans-serif;
@@ -44,38 +42,74 @@
             left: -620px;
             font-size: 16px;
         }
-    .img{
-        width: 556px;
-        height: 250px;
-        position: absolute;
-        top: 73px;
-        left: 60px;
-    }
-    .boton1{
-        width: 235px;
-        height: 25px;
-        position: absolute;
-        top: 320px;
-        left: 970px;
-        text-decoration-line: none;
-    }
+        .img {
+            width: 556px;
+            height: 250px;
+            position: absolute;
+            top: 73px;
+            left: 60px;
+            border-radius: 200px;
+        }
+        
+        .boton1 {
+            width: 230px;
+            height: 50px;
+            position: absolute;
+            top: 320px;
+            left: 970px;
+            border-radius: 60px;
+            background-color: #4286f4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .boton1:hover {
+            background-color: #304b76;
+        }
+        .img4:hover {
+            box-shadow: 0px 0px 30px rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .desc, .desc2 {
+                position: static;
+                font-size: 18px;
+                padding: 10px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .img, .img4 {
+                position: static;
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                border-radius: 15px;
+                margin-top: 20px;
+            }
+            .boton1 {
+                position: static;
+                width: auto;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
-
 <body>
+    <center><h1 style="color: #eae851;">Sistema web de asesoramiento psicológico (chat psy-helper)</h1></center> 
 
-    <center><h1 style="color: #eae851;"
-        >Sistema web de asesoramiento psicológico (chat pussy-helper)</h1></center> 
-
-    <div  class="box" style="background-color:rgba(255, 255, 255, 0.564); border-radius: 40px; box-shadow: 15px 15px 18px rgb(59, 110, 177);">
-        <img style="border-radius: 200px;"  class="img" src="ansiedad.jpg">
-        <p class="desc" style="color: #000000; font-family: Arial, Helvetica, sans-serif;">Nuestra plataforma ofrece apoyo psicológico con inteligencia artificial para quienes tienen dificultades para expresarse. Garantizamos un entorno seguro y confidencial para compartir preocupaciones y recibir orientación</p>
-        
-
-<button class="boton1" onclick="location.href='sad.html'">Preguntas antes de Hablar con la IA</button>
+    <div class="box">
+        <img class="img" src="ansiedad.jpg">
+        <p class="desc">Nuestra plataforma ofrece apoyo psicológico con inteligencia artificial para quienes tienen dificultades para expresarse. Garantizamos un entorno seguro y confidencial para compartir preocupaciones y recibir orientación.</p>
+        <button class="boton1" onclick="location.href='sad.html'">Preguntas antes de Hablar con la IA</button>
     </div>
-
-    <div class="pollo"></div>
+    <div class="box">
+         <img class="img4" style="padding: 50; width: 200px; height: 150px; cursor: pointer; border-radius: 15px; " src="trampol.jpg" onclick="location.href='sad.html'">
+         <img class="img4" style="left: 50; width: 200px; height: 150px; cursor: pointer; border-radius: 15px; " src="trampol.jpg" onclick="location.href='sad.html'">
+         <img class="img4" style="width: 200px; height: 150px; cursor: pointer; border-radius: 15px; " src="trampol.jpg" onclick="location.href='sad.html'">
+         <img class="img4" style="width: 200px; height: 150px; cursor: pointer; border-radius: 15px; " src="trampol.jpg" onclick="location.href='sad.html'">
+        
+    </div>
     <div class="box"></div>
     <div class="box"></div>
 </body>
