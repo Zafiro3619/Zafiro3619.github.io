@@ -1,0 +1,102 @@
+/* Estilos generales */
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif; /* Cambiamos la fuente a Roboto para un aspecto más profesional */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    background-color: #f8f9fa; /* Color de fondo más claro */
+    padding: 20px; /* Agregamos un poco de espacio alrededor del contenido */
+    background-color: #76a2d1;
+}
+
+/* Estilos para etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; /* Hacemos que las etiquetas sean más prominentes */
+    color: #555; /* Cambiamos el color del texto a un tono más oscuro */
+    font-size: 18px; /* Ajustamos el tamaño de la fuente */
+}
+
+/* Estilos para botones */
+input[type="submit"] {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cambiamos el color de fondo a azul */
+    color: #fff; /* Color de texto blanco */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregamos una transición suave */
+    font-size: 16px; /* Ajustamos el tamaño de la fuente */
+    box-shadow: 3px 2px 3px 3px rgb(10, 8, 8);
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambiamos el color de fondo al pasar el ratón */
+}
+
+/* Estilos para preguntas */
+p {
+    margin-bottom: 20px;
+    font-size: 20px; /* Aumentamos el tamaño de la fuente de las preguntas */
+    font-weight: bold; /* Hacemos que las preguntas sean más prominentes */
+    color: #000; /* Cambiamos el color del texto a negro */
+}
+
+/* Estilos para las listas de radio buttons */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-right: 20px;
+    
+}
+
+/* Estilos para los radio buttons */
+input[type="radio"] {
+    display: none; /* Ocultamos los radio buttons */
+}
+
+/* Estilos para los labels de los radio buttons */
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Color de fondo */
+    color: #333; /* Color de texto */
+    border: 1px solid #ccc; /* Borde */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para los labels seleccionados */
+input[type="radio"]:checked + label {
+    background-color: #54e47f; /* Cambiamos el color de fondo al seleccionar */
+    color: #fff; /* Cambiamos el color del texto al seleccionar */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3d6324;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
