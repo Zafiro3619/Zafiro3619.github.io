@@ -52,7 +52,7 @@ if (isset($_GET["username"]) && isset($_GET["password"])) {
     // Verificar si el usuario y la contraseña son correctos
     if ($username === "marcelo" && $password === "1234") {
         // Iniciar sesión correctamente, redirigir a otra página
-        header("Location: otra_pagina.php");
+        header("Location: index.html");
         exit(); // Importante: asegúrate de detener la ejecución del script después de la redirección
     } else {
         // Mostrar un mensaje de error si el usuario o la contraseña son incorrectos
